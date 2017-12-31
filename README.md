@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://github.com/hustcc/canvas-nest.js">Canvas-Nest</a> for <a href="https://github.com/theme-next">NexT</a></h1>
+<h1 align="center"><a href="https://github.com/hustcc/canvas-nest.js">canvas-nest.js</a> for <a href="https://github.com/theme-next">NexT</a></h1>
 
 <h1 align="center">Installation</h1>
 
