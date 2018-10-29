@@ -25,7 +25,22 @@ $ git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canv
 Enable module in **NexT** `_config.yml` file:
 
 ```yml
-canvas_nest: true
+canvas_nest:
+  enable: true
+  onmobile: true # display on mobile or not
+  color: '0,0,255' # RGB values, use ',' to separate
+  opacity: 0.5 # the opacity of line: 0~1
+  zIndex: -1 # z-index property of the background
+  count: 99 # the number of lines
+```
+
+**And, if you wants to use the CDN, then need to set:**
+
+```yml
+vendors:
+  ...
+  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest.min.js
+  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js
 ```
 
 <h1 align="center">Update</h1>
