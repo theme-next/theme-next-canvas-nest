@@ -2,6 +2,8 @@
 
 <h1 align="center">Installation</h1>
 
+<h2>If you want to use the CDN instead of clone this repo, please jump to the Step 3.</h2>
+
 <h2 align="center">Step 1 &rarr; Go to NexT dir</h2>
 
 Change dir to **NexT** directory. There must be `layout`, `source`, `languages` and other directories:
@@ -39,8 +41,8 @@ canvas_nest:
 ```yml
 vendors:
   ...
-  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest.min.js
-  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js
+  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest.min.js
+  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest-nomobile.min.js
 ```
 
 <h1 align="center">Update</h1>
