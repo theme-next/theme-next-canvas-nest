@@ -11,7 +11,7 @@ Change dir to **NexT** directory. There must be `layout`, `source`, `languages` 
 ```sh
 $ cd themes/next
 $ ls
-bower.json  _config.yml  docs  gulpfile.coffee  languages  layout  LICENSE.md  package.json  README.md  scripts  source  test
+_config.yml  crowdin.yml  docs  gulpfile.js  languages  layout  LICENSE.md  package.json  README.md  scripts  source
 ```
 
 <h2 align="center">Step 2 &rarr; Get module</h2>
