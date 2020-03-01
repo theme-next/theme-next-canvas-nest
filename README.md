@@ -1,53 +1,49 @@
-<h1 align="center"><a href="https://github.com/hustcc/canvas-nest.js">canvas-nest.js</a> for <a href="https://github.com/theme-next">NexT</a></h1>
+# Theme NexT Canvas Nest
 
-<h1 align="center">Installation</h1>
+![Theme Version](https://img.shields.io/badge/NexT-v7.3.0+-blue?style=flat-square)
 
-<h2>If you want to use the CDN instead of clone this repo, please jump to the Step 3.</h2>
+[canvas-nest.js](https://github.com/hustcc/canvas-nest.js) for [NexT](https://github.com/theme-next).
 
-<h2 align="center">Step 1 &rarr; Go to NexT dir</h2>
+## Install
 
-Change dir to **NexT** directory. There must be `layout`, `source`, `languages` and other directories:
+### Step 1 &rarr; Go to Hexo dir
+
+Change dir to **Hexo** directory. There must be `scaffolds`, `source`, `themes` and other directories:
 
 ```sh
-$ cd themes/next
+$ cd hexo
 $ ls
-_config.yml  crowdin.yml  docs  gulpfile.js  languages  layout  LICENSE.md  package.json  README.md  scripts  source
+scaffolds  source  themes  _config.yml  package.json
 ```
 
-<h2 align="center">Step 2 &rarr; Get module</h2>
+### Step 2 &rarr; Create `footer.swig`
 
-Install module to `source/lib` directory:
+Create a file named `footer.swig` in `hexo/source/_data` directory (create `_data` directory if it did not exists).
 
-```sh
-$ git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+Edit this file and add the following content:
+
+```xml
+<script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 ```
 
-<h2 align="center">Step 3 &rarr; Set it up</h2>
+You can customize these options.
 
-Enable module in **NexT** `_config.yml` file:
+### Step 3 &rarr; Set it up
+
+In the NexT `_config.yml`, uncomment `footer` under the `custom_file_path` section.
 
 ```yml
-canvas_nest:
-  enable: true
-  onmobile: true # display on mobile or not
-  color: '0,0,255' # RGB values, use ',' to separate
-  opacity: 0.5 # the opacity of line: 0~1
-  zIndex: -1 # z-index property of the background
-  count: 99 # the number of lines
-```
-
-**And, if you wants to use the CDN, then need to set:**
-
-```yml
-vendors:
-  ...
-  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest.min.js
-  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@latest/canvas-nest-nomobile.min.js
-```
-
-<h1 align="center">Update</h1>
-
-```sh
-$ cd themes/next/source/lib/canvas-nest
-$ git pull
+# Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
 ```
