@@ -18,7 +18,7 @@ scaffolds  source  themes  _config.yml  package.json
 
 ### Step 2 &rarr; Create `footer.swig`
 
-Create a file named `footer.swig` in `hexo/source/_data` directory (create `_data` directory if it did not exists).
+Create a file named `footer.swig` in `hexo/source/_data` directory (create `_data` directory if it does not exist).
 
 Edit this file and add the following content:
 
