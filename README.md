@@ -18,7 +18,7 @@ scaffolds  source  themes  _config.yml  package.json
 
 ### Step 2 &rarr; Create `footer.swig`
 
-Create a file named `footer.swig` in `hexo/source/_data` directory (create `_data` directory if it does not exist).
+Create a file named `footer.swig` (create `footer.njk` file if NexT v8.0.0 or later) in `hexo/source/_data` directory (create `_data` directory if it does not exist).
 
 Edit this file and add the following content:
 
